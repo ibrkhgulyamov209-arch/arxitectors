@@ -20,114 +20,15 @@ const Instagram = ({ size = 16, className = "" }) => (
   </svg>
 );
 
+// Hero background videos sequence
+const heroVideos = [
+  "https://assets.mixkit.co/videos/preview/mixkit-modern-architecture-building-4231-large.mp4",
+  "https://assets.mixkit.co/videos/preview/mixkit-living-room-of-a-modern-house-41584-large.mp4",
+  "https://assets.mixkit.co/videos/preview/mixkit-architectural-model-of-a-building-41585-large.mp4"
+];
+
 // Translation Dictionary
 const content = {
-  en: {
-    nav: {
-      philosophy: 'Philosophy',
-      services: 'Services',
-      process: 'Process',
-      works: 'Works',
-      contact: 'Contact',
-    },
-    hero: {
-      eyebrow: 'Architectural Practice — Est. 2020',
-      h1_1: 'Space is',
-      h1_2: 'thought',
-      h1_3: 'made real.',
-      desc: 'We design buildings and interiors that respect the particular — the site, the client, the material, the light. Architecture as a practice of close attention.',
-      btnServices: 'Our Services',
-      btnProjects: 'View Projects →',
-    },
-    metrics: {
-      yearsNum: '06+',
-      yearsLabel: 'Years in Practice',
-      projectsNum: '35+',
-      projectsLabel: 'Projects Delivered',
-      accuracyNum: '100%',
-      accuracyLabel: 'Structural Accuracy',
-      hqNum: 'Tashkent',
-      hqLabel: 'Base Headquarters',
-    },
-    disciplines: {
-      eyebrow: 'Selected Disciplines',
-      d1Title: 'Residential Architecture',
-      d1Desc: 'Private villas and residences engineered for natural daylight and structural longevity.',
-      d2Title: 'Commercial Masterplanning',
-      d2Desc: 'High-density urban hubs designed with passive climate control and modern materials.',
-      d3Title: 'Interior Spatial Design',
-      d3Desc: 'Acoustically tuned, minimalist interior spaces with exposed timber and raw stone.',
-    },
-    philosophy: {
-      eyebrow: 'Philosophy',
-      title: 'Designing space through subtraction.',
-      desc: 'Architecture should not demand attention through artificial ornament. We focus on clean geometry, precise lighting angles, durable materials, and natural ergonomics that stand the test of time.',
-      p1Title: '[01] Material Honesty',
-      p1Desc: 'Exposed concrete, glass, steel, and natural timber left untreated to age gracefully.',
-      p2Title: '[02] Volumetric Balance',
-      p2Desc: 'Calculating high ceilings and open sightlines to maximize psychological spatial freedom.',
-      p3Title: '[03] Solar Ergonomics',
-      p3Desc: 'Aligning floorplans to direct natural daylight across key living zones throughout the day.',
-    },
-    services: {
-      eyebrow: 'Services',
-      title: 'Architectural Disciplines',
-      subtitle: 'Full-cycle architectural engineering & design oversight',
-      items: [
-        { num: '01', title: 'Residential Architecture', desc: 'Custom private residences, modern villas, and spatial living concepts tailored to terrain and light.' },
-        { num: '02', title: 'Commercial Design', desc: 'High-performance office hubs, retail spaces, and corporate towers designed for efficiency and prestige.' },
-        { num: '03', title: 'Interior Spatial Planning', desc: 'Minimalist interior architecture emphasizing material honesty, custom joinery, and natural acoustics.' },
-        { num: '04', title: 'Urban Masterplanning', desc: 'Large-scale site strategies, community layouts, and sustainable zoning frameworks.' },
-        { num: '05', title: 'Architectural Renovation', desc: 'Sensitive restoration and modernized structural interventions for heritage and existing builds.' },
-        { num: '06', title: 'Landscape Integration', desc: 'Harmonious blending of built concrete and steel with natural topographies and outdoor courtyards.' },
-      ],
-    },
-    process: {
-      eyebrow: 'Process',
-      title: 'From Plot to Structure',
-      items: [
-        { phase: '01', title: 'Discovery & Plot Analysis', desc: 'Site evaluation, zoning verification, solar orientation assessment, and client ambition mapping.' },
-        { phase: '02', title: 'Concept Formulation', desc: 'Initial massing studies, structural wireframes, volumetric proportions, and material sampling.' },
-        { phase: '03', title: 'Schematic Design', desc: 'Detailed 3D visualizations, precise floorplan layouts, and preliminary engineering specs.' },
-        { phase: '04', title: 'Technical Blueprinting', desc: 'Complete construction documentation, structural calculations, and permit compliance drawings.' },
-        { phase: '05', title: 'Execution Oversight', desc: 'On-site supervision, craftsman guidance, and rigorous quality check during construction.' },
-        { phase: '06', title: 'Handover & Commissioning', desc: 'Final architectural validation, acoustic testing, and spatial commissioning for immediate occupancy.' },
-      ],
-    },
-    works: {
-      eyebrow: 'Works',
-      title: 'Selected Projects',
-      filters: { all: 'All', residential: 'Residential', commercial: 'Commercial', public: 'Public' },
-      viewSpecs: 'View Specifications',
-      projects: [
-        { id: 1, num: 'P-01', title: 'Minimalist Concrete Villa', category: 'Residential', location: 'Tashkent, UZ', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80', description: 'Raw concrete geometry paired with warm timber acoustic panels.' },
-        { id: 2, num: 'P-02', title: 'Central Business Plaza', category: 'Commercial', location: 'Tashkent, UZ', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80', description: 'High-performance commercial glass facade integrating passive cooling systems.' },
-        { id: 3, num: 'P-03', title: 'Glass & Steel Pavilion', category: 'Residential', location: 'Mountain Suburbs', image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80', description: 'Suspended glass enclosure offering 360-degree panoramic landscape integration.' },
-        { id: 4, num: 'P-04', title: 'Modern Cultural Center', category: 'Public', location: 'Urban District', image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80', description: 'Fluid public geometry constructed for exhibitions and architectural gatherings.' },
-      ]
-    },
-    quote: {
-      eyebrow: 'Aesthetic Principle',
-      text: '"Architecture is the learned game, correct and magnificent, of forms assembled in the light."',
-      author: 'samandar_arxitector',
-    },
-    contact: {
-      eyebrow: 'Contact',
-      title: 'Initiate a Spatial Project.',
-      desc: 'Available for residential villa consultations, commercial architectural planning, and site development in Tashkent and internationally.',
-      location: 'Tashkent, Uzbekistan',
-      labelName: 'Full Name',
-      placeholderName: 'e.g. Alexander Petrov',
-      labelInfo: 'Contact Info (Phone / Email / Telegram)',
-      placeholderInfo: '+998 33 263 42 42 or @uz_702',
-      labelBrief: 'Project Brief & Requirements',
-      placeholderBrief: 'Plot location, total square meters, residential or commercial scope...',
-      submitBtn: 'Send Consultation Request',
-    },
-    footer: {
-      rights: 'All rights reserved.',
-    }
-  },
   uz: {
     nav: {
       philosophy: 'Falsafa',
@@ -159,8 +60,8 @@ const content = {
       eyebrow: 'Asosiy Yo‘nalishlar',
       d1Title: 'Turar-joy arxitekturasi',
       d1Desc: 'Tabiiy yorug‘lik va uzoq umr ko‘rishga moslashtirilgan shaxsiy villalar hamda rezidensiyalar.',
-      d2Title: 'Tijorat master-rejasi',
-      d2Desc: 'Passiv iqlim nazorati va zamonaviy materiallar bilan loyihalashtirilgan biznes markazlari.',
+      d2Title: 'планировочное решение',
+      d2Desc: 'Passiv iqlim nazorati va zamonaviy materiallar bilan loyihalashtirilgan biznes markazlari va fazoviy yechimlar.',
       d3Title: 'Interyer va fazoviy dizayn',
       d3Desc: 'Materiallar sofligi, akustika va yog‘och unsurlarga ega minimalist interyerlar.',
     },
@@ -183,7 +84,7 @@ const content = {
         { num: '01', title: 'Turar-joy arxitekturasi', desc: 'Shaxsiy villalar, zamonaviy hovlilar va yer relyefiga moslashtirilgan loyihalar.' },
         { num: '02', title: 'Tijorat dizayni', desc: 'Yuqori samaradorlikka ega ofislar, savdo markazlari va biznes binolari.' },
         { num: '03', title: 'Interyer rejalashtirish', desc: 'Materiallar sofligi va tabiiy akustikaga asoslangan minimalist interyerlar.' },
-        { num: '04', title: 'Shaharsozlik loyihalari', desc: 'Yirik hududlar master-rejasi va barqaror hududlashtirish strategiyalari.' },
+        { num: '04', title: 'планировочное решение', desc: 'Yirik hududlar master-rejasi, xonalarning o‘ylangan joylashuvi va mukammal rejalashtirish yechimlari.' },
         { num: '05', title: 'Arxitektura rekonstruksiyasi', desc: 'Tarixiy va mavjud binolarni zamonaviy muhandislik bilan qayta tiklash.' },
         { num: '06', title: 'Landshaft integratsiyasi', desc: 'Beton va po‘lat konstruksiyalarni tabiiy landshaft bilan uyg‘unlashtirish.' },
       ],
@@ -226,12 +127,114 @@ const content = {
       placeholderName: 'masalan, Aleksandr Petrov',
       labelInfo: 'Bog‘lanish ma’lumoti (Telefon / Email / Telegram)',
       placeholderInfo: '+998 33 263 42 42 yoki @uz_702',
-      labelBrief: 'Loyiha haqida qisqacha',
-      placeholderBrief: 'Obyekt joylashuvi, umumiy kvadrat metr, turar-joy yoki tijorat yo‘nalishi...',
       submitBtn: 'Konsultatsiya so‘rovini yuborish',
     },
     footer: {
       rights: 'Barcha huquqlar himoyalangan.',
+    }
+  },
+  en: {
+    nav: {
+      philosophy: 'Philosophy',
+      services: 'Services',
+      process: 'Process',
+      works: 'Works',
+      contact: 'Contact',
+    },
+    hero: {
+      eyebrow: 'Architectural Practice — Est. 2020',
+      h1_1: 'Space is',
+      h1_2: 'thought',
+      h1_3: 'made real.',
+      desc: 'We design buildings and interiors that respect the particular — the site, the client, the material, the light. Architecture as a practice of close attention.',
+      btnServices: 'Our Services',
+      btnProjects: 'View Projects →',
+    },
+    metrics: {
+      yearsNum: '06+',
+      yearsLabel: 'Years in Practice',
+      projectsNum: '35+',
+      projectsLabel: 'Projects Delivered',
+      accuracyNum: '100%',
+      accuracyLabel: 'Structural Accuracy',
+      hqNum: 'Tashkent',
+      hqLabel: 'Base Headquarters',
+    },
+    disciplines: {
+      eyebrow: 'Selected Disciplines',
+      d1Title: 'Residential Architecture',
+      d1Desc: 'Private villas and residences engineered for natural daylight and structural longevity.',
+      d2Title: 'планировочное решение',
+      d2Desc: 'High-density spatial layouts designed with passive climate control and modern materials.',
+      d3Title: 'Interior Spatial Design',
+      d3Desc: 'Acoustically tuned, minimalist interior spaces with exposed timber and raw stone.',
+    },
+    philosophy: {
+      eyebrow: 'Philosophy',
+      title: 'Designing space through subtraction.',
+      desc: 'Architecture should not demand attention through artificial ornament. We focus on clean geometry, precise lighting angles, durable materials, and natural ergonomics that stand the test of time.',
+      p1Title: '[01] Material Honesty',
+      p1Desc: 'Exposed concrete, glass, steel, and natural timber left untreated to age gracefully.',
+      p2Title: '[02] Volumetric Balance',
+      p2Desc: 'Calculating high ceilings and open sightlines to maximize psychological spatial freedom.',
+      p3Title: '[03] Solar Ergonomics',
+      p3Desc: 'Aligning floorplans to direct natural daylight across key living zones throughout the day.',
+    },
+    services: {
+      eyebrow: 'Services',
+      title: 'Architectural Disciplines',
+      subtitle: 'Full-cycle architectural engineering & design oversight',
+      items: [
+        { num: '01', title: 'Residential Architecture', desc: 'Custom private residences, modern villas, and spatial living concepts tailored to terrain and light.' },
+        { num: '02', title: 'Commercial Design', desc: 'High-performance office hubs, retail spaces, and corporate towers designed for efficiency and prestige.' },
+        { num: '03', title: 'Interior Spatial Planning', desc: 'Minimalist interior architecture emphasizing material honesty, custom joinery, and natural acoustics.' },
+        { num: '04', title: 'планировочное решение', desc: 'Comprehensive space planning strategies, optimized room flows, and architectural layout solutions.' },
+        { num: '05', title: 'Architectural Renovation', desc: 'Sensitive restoration and modernized structural interventions for heritage and existing builds.' },
+        { num: '06', title: 'Landscape Integration', desc: 'Harmonious blending of built concrete and steel with natural topographies and outdoor courtyards.' },
+      ],
+    },
+    process: {
+      eyebrow: 'Process',
+      title: 'From Plot to Structure',
+      items: [
+        { phase: '01', title: 'Discovery & Plot Analysis', desc: 'Site evaluation, zoning verification, solar orientation assessment, and client ambition mapping.' },
+        { phase: '02', title: 'Concept Formulation', desc: 'Initial massing studies, structural wireframes, volumetric proportions, and material sampling.' },
+        { phase: '03', title: 'Schematic Design', desc: 'Detailed 3D visualizations, precise floorplan layouts, and preliminary engineering specs.' },
+        { phase: '04', title: 'Technical Blueprinting', desc: 'Complete construction documentation, structural calculations, and permit compliance drawings.' },
+        { phase: '05', title: 'Execution Oversight', desc: 'On-site supervision, craftsman guidance, and rigorous quality check during construction.' },
+        { phase: '06', title: 'Handover & Commissioning', desc: 'Final architectural validation, acoustic testing, and spatial commissioning for immediate occupancy.' },
+      ],
+    },
+    works: {
+      eyebrow: 'Works',
+      title: 'Selected Projects',
+      filters: { all: 'All', residential: 'Residential', commercial: 'Commercial', public: 'Public' },
+      viewSpecs: 'View Specifications',
+      projects: [
+        { id: 1, num: 'P-01', title: 'Minimalist Concrete Villa', category: 'Residential', location: 'Tashkent, UZ', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80', description: 'Raw concrete geometry paired with warm timber acoustic panels.' },
+        { id: 2, num: 'P-02', title: 'Central Business Plaza', category: 'Commercial', location: 'Tashkent, UZ', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80', description: 'High-performance commercial glass facade integrating passive cooling systems.' },
+        { id: 3, num: 'P-03', title: 'Glass & Steel Pavilion', category: 'Residential', location: 'Mountain Suburbs', image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80', description: 'Suspended glass enclosure offering 360-degree panoramic landscape integration.' },
+        { id: 4, num: 'P-04', title: 'Modern Cultural Center', category: 'Public', location: 'Urban District', image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80', description: 'Fluid public geometry constructed for exhibitions and architectural gatherings.' },
+      ]
+    },
+    quote: {
+      eyebrow: 'Aesthetic Principle',
+      text: '"Architecture is the learned game, correct and magnificent, of forms assembled in the light."',
+      author: 'samandar_arxitector',
+    },
+    contact: {
+      eyebrow: 'Contact',
+      title: 'Initiate a Spatial Project.',
+      desc: 'Available for residential villa consultations, commercial architectural planning, and site development in Tashkent and internationally.',
+      location: 'Tashkent, Uzbekistan',
+      labelName: 'Full Name',
+      placeholderName: 'e.g. Alexander Petrov',
+      labelInfo: 'Contact Info (Phone / Email / Telegram)',
+      placeholderInfo: '+998 33 263 42 42 or @uz_702',
+      submitBtn: 'Send Consultation Request',
+    },
+    footer: {
+      rights: 'All rights reserved.',
     }
   },
   ru: {
@@ -265,8 +268,8 @@ const content = {
       eyebrow: 'Основные Направления',
       d1Title: 'Жилая Архитектура',
       d1Desc: 'Частные виллы и резиденции, спроектированные с учетом ландшафта и естественного света.',
-      d2Title: 'Коммерческий Мастер-план',
-      d2Desc: 'Высокотехнологичные офисные центры с пассивным климат-контролем и современными материалами.',
+      d2Title: 'планировочное решение',
+      d2Desc: 'Грамотная организация внутреннего пространства и оптимизация каждого квадратного метра.',
       d3Title: 'Интерьерный Дизайн',
       d3Desc: 'Минималистичные интерьеры с акустической проработкой, натуральным деревом и камнем.',
     },
@@ -276,7 +279,7 @@ const content = {
       desc: 'Архитектура не должна привлекать внимание искусственным декором. Мы фокусируемся на чистой геометрии, естественном освещении и долговечных материалах.',
       p1Title: '[01] Честность материалов',
       p1Desc: 'Открытый бетон, стекло, сталь и натуральное дерево оставлены в первозданном виде.',
-      p2Title: '[02] Объемный баланс',
+      p2Title: '[02] Объёмный баланс',
       p2Desc: 'Расчет высоких потолков и открытых перспектив для максимального ощущения свободы.',
       p3Title: '[03] Солнечная эргономика',
       p3Desc: 'Проектирование планировок для оптимального естественного освещения в течение дня.',
@@ -289,7 +292,7 @@ const content = {
         { num: '01', title: 'Жилая архитектура', desc: 'Частные виллы и резиденции, спроектированные с учетом ландшафта и естественного света.' },
         { num: '02', title: 'Коммерческий дизайн', desc: 'Высокотехнологичные офисные центры, торговые пространства и корпоративные здания.' },
         { num: '03', title: 'Интерьерное планирование', desc: 'Минималистичная интерьерная архитектура с акцентом на честность материалов и акустику.' },
-        { num: '04', title: 'Градостроительство', desc: 'Масштабные мастер-планы территорий и стратегии устойчивого развития.' },
+        { num: '04', title: 'планировочное решение', desc: 'Продуманная организация пространства, разработка планировочных решений и зонирование.' },
         { num: '05', title: 'Реконструкция и реставрация', desc: 'Бережное восстановление и модернизация существующих строений.' },
         { num: '06', title: 'Ландшафтная интеграция', desc: 'Гармоничное сочетание бетона и стали с натуральным ландшафтом.' },
       ],
@@ -326,14 +329,12 @@ const content = {
     contact: {
       eyebrow: 'Контакты',
       title: 'Обсудить Ваш Проект.',
-      desc: 'Доступен для консультаций по виллам, коммерческим объектам и градостроительным проектам в Ташкенте и за рубежом.',
+      desc: 'Доступен для консультаций по виллам, коммерческим объектам и планировочным решениям в Ташкенте и за рубежом.',
       location: 'Ташкент, Узбекистан',
       labelName: 'Ваше имя',
       placeholderName: 'например, Александр Петров',
       labelInfo: 'Контактные данные (Телефон / Email / Telegram)',
       placeholderInfo: '+998 33 263 42 42 или @uz_702',
-      labelBrief: 'Краткое описание проекта',
-      placeholderBrief: 'Локация, площадь, жилой или коммерческий профиль...',
       submitBtn: 'Отправить запрос на консультацию',
     },
     footer: {
@@ -346,9 +347,14 @@ export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeFilter, setActiveFilter] = useState('All');
   const [darkMode, setDarkMode] = useState(false);
-  const [lang, setLang] = useState('en');
+  const [lang, setLang] = useState('uz'); // Default main language set to Uzbek
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const t = content[lang];
+
+  const handleVideoEnd = () => {
+    setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % heroVideos.length);
+  };
 
   const filterCategoryMap = {
     All: 'All',
@@ -404,7 +410,7 @@ export default function App() {
               darkMode ? 'border-[#F4EFE6]/20' : 'border-[#1A1917]/20'
             }`}>
               <Globe size={13} className={darkMode ? 'text-[#A09A90]' : 'text-[#666158]'} />
-              {['en', 'uz', 'ru'].map((l) => (
+              {['uz', 'en', 'ru'].map((l) => (
                 <button
                   key={l}
                   onClick={() => setLang(l)}
@@ -469,7 +475,7 @@ export default function App() {
             
             <div className="pt-4 flex items-center justify-between border-t border-[#1A1917]/15">
               <div className="flex items-center gap-2">
-                {['en', 'uz', 'ru'].map((l) => (
+                {['uz', 'en', 'ru'].map((l) => (
                   <button
                     key={l}
                     onClick={() => setLang(l)}
@@ -553,15 +559,36 @@ export default function App() {
             </div>
           </div>
 
+          {/* Sequential Hero Video Player */}
           <div className="lg:col-span-5 relative">
-            <div className={`aspect-4/5 sm:aspect-3/4 overflow-hidden border ${
+            <div className={`aspect-[4/5] sm:aspect-[3/4] overflow-hidden border relative ${
               darkMode ? 'border-[#F4EFE6]/20 bg-[#181614]' : 'border-[#1A1917]/20 bg-[#EFE8DC]'
             }`}>
-              <img 
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" 
-                alt="Architectural structure" 
+              <video
+                key={currentVideoIndex}
+                src={heroVideos[currentVideoIndex]}
+                autoPlay
+                muted
+                playsInline
+                onEnded={handleVideoEnd}
                 className="w-full h-full object-cover filter grayscale contrast-125 hover:grayscale-0 transition-all duration-700"
               />
+              
+              {/* Video Slide Indicators */}
+              <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center bg-black/40 backdrop-blur-sm px-3 py-1.5 font-mono-code text-[10px] text-white">
+                <span className="uppercase tracking-widest">Video 0{currentVideoIndex + 1} / 0{heroVideos.length}</span>
+                <div className="flex gap-1.5">
+                  {heroVideos.map((_, idx) => (
+                    <span 
+                      key={idx} 
+                      onClick={() => setCurrentVideoIndex(idx)}
+                      className={`h-1 cursor-pointer transition-all ${
+                        currentVideoIndex === idx ? 'w-4 bg-white' : 'w-1.5 bg-white/40'
+                      }`}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -746,7 +773,7 @@ export default function App() {
             <div key={p.id} className={`group border ${
               darkMode ? 'border-[#F4EFE6]/15 bg-[#181614]' : 'border-[#1A1917]/15 bg-[#EFE8DC]'
             }`}>
-              <div className="aspect-16/10 overflow-hidden relative">
+              <div className="aspect-[16/10] overflow-hidden relative">
                 <img 
                   src={p.image} 
                   alt={p.title}
@@ -859,20 +886,6 @@ export default function App() {
                       : 'bg-[#F4EFE6] border-[#1A1917]/20 text-[#1A1917] focus:border-[#1A1917]'
                   }`}
                 />
-              </div>
-              <div>
-                <label className={`block font-mono-code text-xs uppercase tracking-widest mb-2 ${
-                  darkMode ? 'text-[#A09A90]' : 'text-[#666158]'
-                }`}>{t.contact.labelBrief}</label>
-                <textarea 
-                  rows="4" 
-                  placeholder={t.contact.placeholderBrief}
-                  className={`w-full border px-4 py-3 text-sm focus:outline-none resize-none ${
-                    darkMode 
-                      ? 'bg-[#121110] border-[#F4EFE6]/20 text-[#F4EFE6] focus:border-[#F4EFE6]' 
-                      : 'bg-[#F4EFE6] border-[#1A1917]/20 text-[#1A1917] focus:border-[#1A1917]'
-                  }`}
-                ></textarea>
               </div>
               <button 
                 type="submit" 
