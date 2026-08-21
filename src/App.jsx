@@ -123,11 +123,6 @@ const content = {
       title: 'Loyiha muhokamasini boshlang.',
       desc: 'Toshkent va xalqaro miqyosda villalar, tijorat bino loyihalari va shaharsozlik konsultatsiyasi uchun ochiqman.',
       location: 'Toshkent, O‘zbekiston',
-      labelName: 'To‘liq ismingiz',
-      placeholderName: 'masalan, Aleksandr Petrov',
-      labelInfo: 'Bog‘lanish ma’lumoti (Telefon / Email / Telegram)',
-      placeholderInfo: '+998 33 263 42 42 yoki @uz_702',
-      submitBtn: 'Konsultatsiya so‘rovini yuborish',
     },
     footer: {
       rights: 'Barcha huquqlar himoyalangan.',
@@ -227,11 +222,6 @@ const content = {
       title: 'Initiate a Spatial Project.',
       desc: 'Available for residential villa consultations, commercial architectural planning, and site development in Tashkent and internationally.',
       location: 'Tashkent, Uzbekistan',
-      labelName: 'Full Name',
-      placeholderName: 'e.g. Alexander Petrov',
-      labelInfo: 'Contact Info (Phone / Email / Telegram)',
-      placeholderInfo: '+998 33 263 42 42 or @uz_702',
-      submitBtn: 'Send Consultation Request',
     },
     footer: {
       rights: 'All rights reserved.',
@@ -331,11 +321,6 @@ const content = {
       title: 'Обсудить Ваш Проект.',
       desc: 'Доступен для консультаций по виллам, коммерческим объектам и планировочным решениям в Ташкенте и за рубежом.',
       location: 'Ташкент, Узбекистан',
-      labelName: 'Ваше имя',
-      placeholderName: 'например, Александр Петров',
-      labelInfo: 'Контактные данные (Телефон / Email / Telegram)',
-      placeholderInfo: '+998 33 263 42 42 или @uz_702',
-      submitBtn: 'Отправить запрос на консультацию',
     },
     footer: {
       rights: 'Все права защищены.',
@@ -347,7 +332,7 @@ export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeFilter, setActiveFilter] = useState('All');
   const [darkMode, setDarkMode] = useState(false);
-  const [lang, setLang] = useState('uz'); // Default main language set to Uzbek
+  const [lang, setLang] = useState('uz');
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
   const t = content[lang];
@@ -819,85 +804,38 @@ export default function App() {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Clean Contact Section (Form completely removed) */}
       <section id="contact" className="py-24 px-6 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-          <div className="lg:col-span-5 space-y-6">
-            <div className={`font-mono-code text-xs uppercase tracking-widest ${
-              darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'
-            }`}>{t.contact.eyebrow}</div>
-            <h2 className="font-display text-3xl md:text-5xl font-light leading-tight">
-              {t.contact.title}
-            </h2>
-            <p className={`text-base font-light leading-relaxed ${darkMode ? 'text-[#A09A90]' : 'text-[#666158]'}`}>
-              {t.contact.desc}
-            </p>
+        <div className="max-w-3xl space-y-8">
+          <div className={`font-mono-code text-xs uppercase tracking-widest ${
+            darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'
+          }`}>{t.contact.eyebrow}</div>
+          <h2 className="font-display text-4xl md:text-6xl font-light leading-tight">
+            {t.contact.title}
+          </h2>
+          <p className={`text-base md:text-lg font-light leading-relaxed ${darkMode ? 'text-[#A09A90]' : 'text-[#666158]'}`}>
+            {t.contact.desc}
+          </p>
 
-            <div className="pt-6 space-y-4 font-mono-code text-xs uppercase tracking-widest">
-              <div className="flex items-center gap-3">
-                <MapPin size={16} className={darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'} />
-                <span>{t.contact.location}</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone size={16} className={darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'} />
-                <a href="tel:+998332634242" className="hover:underline transition-colors">+998 33 263 42 42</a>
-              </div>
-              <div className="flex items-center gap-3">
-                <Send size={16} className={darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'} />
-                <a href="https://t.me/uz_702" target="_blank" rel="noopener noreferrer" className="hover:underline transition-colors">@uz_702</a>
-              </div>
-              <div className="flex items-center gap-3">
-                <Instagram size={16} className={darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'} />
-                <a href="https://instagram.com/samandar_arxitector" target="_blank" rel="noopener noreferrer" className="hover:underline transition-colors">
-                  @samandar_arxitector
-                </a>
-              </div>
+          <div className="pt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 font-mono-code text-xs uppercase tracking-widest">
+            <div className="flex items-center gap-3">
+              <MapPin size={18} className={darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'} />
+              <span>{t.contact.location}</span>
             </div>
-          </div>
-
-          <div className={`lg:col-span-7 p-8 md:p-12 border ${
-            darkMode ? 'bg-[#181614] border-[#F4EFE6]/15' : 'bg-[#EFE8DC] border-[#1A1917]/15'
-          }`}>
-            <form onSubmit={(e) => e.preventDefault()} className="space-y-6">
-              <div>
-                <label className={`block font-mono-code text-xs uppercase tracking-widest mb-2 ${
-                  darkMode ? 'text-[#A09A90]' : 'text-[#666158]'
-                }`}>{t.contact.labelName}</label>
-                <input 
-                  type="text" 
-                  placeholder={t.contact.placeholderName}
-                  className={`w-full border px-4 py-3 text-sm focus:outline-none ${
-                    darkMode 
-                      ? 'bg-[#121110] border-[#F4EFE6]/20 text-[#F4EFE6] focus:border-[#F4EFE6]' 
-                      : 'bg-[#F4EFE6] border-[#1A1917]/20 text-[#1A1917] focus:border-[#1A1917]'
-                  }`}
-                />
-              </div>
-              <div>
-                <label className={`block font-mono-code text-xs uppercase tracking-widest mb-2 ${
-                  darkMode ? 'text-[#A09A90]' : 'text-[#666158]'
-                }`}>{t.contact.labelInfo}</label>
-                <input 
-                  type="text" 
-                  placeholder={t.contact.placeholderInfo}
-                  className={`w-full border px-4 py-3 text-sm focus:outline-none ${
-                    darkMode 
-                      ? 'bg-[#121110] border-[#F4EFE6]/20 text-[#F4EFE6] focus:border-[#F4EFE6]' 
-                      : 'bg-[#F4EFE6] border-[#1A1917]/20 text-[#1A1917] focus:border-[#1A1917]'
-                  }`}
-                />
-              </div>
-              <button 
-                type="submit" 
-                className={`w-full font-mono-code text-xs uppercase tracking-widest py-4 transition-colors ${
-                  darkMode 
-                    ? 'bg-[#F4EFE6] text-[#121110] hover:bg-[#C4A482]' 
-                    : 'bg-[#1A1917] text-[#F4EFE6] hover:bg-[#7A6348]'
-                }`}
-              >
-                {t.contact.submitBtn}
-              </button>
-            </form>
+            <div className="flex items-center gap-3">
+              <Phone size={18} className={darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'} />
+              <a href="tel:+998332634242" className="hover:underline transition-colors">+998 33 263 42 42</a>
+            </div>
+            <div className="flex items-center gap-3">
+              <Send size={18} className={darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'} />
+              <a href="https://t.me/uz_702" target="_blank" rel="noopener noreferrer" className="hover:underline transition-colors">@uz_702</a>
+            </div>
+            <div className="flex items-center gap-3">
+              <Instagram size={18} className={darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'} />
+              <a href="https://instagram.com/samandar_arxitector" target="_blank" rel="noopener noreferrer" className="hover:underline transition-colors">
+                @samandar_arxitector
+              </a>
+            </div>
           </div>
         </div>
       </section>
