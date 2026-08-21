@@ -27,7 +27,7 @@ const heroVideos = [
   "https://assets.mixkit.co/videos/preview/mixkit-architectural-model-of-a-building-41585-large.mp4"
 ];
 
-// Translation Dictionary
+// Translation Dictionary (UZ -> RU -> EN)
 const content = {
   uz: {
     nav: {
@@ -47,9 +47,9 @@ const content = {
       btnProjects: 'Loyihalarni ko‘rish →',
     },
     metrics: {
-      yearsNum: '06+',
+      yearsNum: '6',
       yearsLabel: 'Yillik tajriba',
-      projectsNum: '35+',
+      projectsNum: '100+',
       projectsLabel: 'Muvaffaqiyatli loyihalar',
       accuracyNum: '100%',
       accuracyLabel: 'Aniq muhandislik',
@@ -128,105 +128,6 @@ const content = {
       rights: 'Barcha huquqlar himoyalangan.',
     }
   },
-  en: {
-    nav: {
-      philosophy: 'Philosophy',
-      services: 'Services',
-      process: 'Process',
-      works: 'Works',
-      contact: 'Contact',
-    },
-    hero: {
-      eyebrow: 'Architectural Practice — Est. 2020',
-      h1_1: 'Space is',
-      h1_2: 'thought',
-      h1_3: 'made real.',
-      desc: 'We design buildings and interiors that respect the particular — the site, the client, the material, the light. Architecture as a practice of close attention.',
-      btnServices: 'Our Services',
-      btnProjects: 'View Projects →',
-    },
-    metrics: {
-      yearsNum: '06+',
-      yearsLabel: 'Years in Practice',
-      projectsNum: '35+',
-      projectsLabel: 'Projects Delivered',
-      accuracyNum: '100%',
-      accuracyLabel: 'Structural Accuracy',
-      hqNum: 'Tashkent',
-      hqLabel: 'Base Headquarters',
-    },
-    disciplines: {
-      eyebrow: 'Selected Disciplines',
-      d1Title: 'Residential Architecture',
-      d1Desc: 'Private villas and residences engineered for natural daylight and structural longevity.',
-      d2Title: 'планировочное решение',
-      d2Desc: 'High-density spatial layouts designed with passive climate control and modern materials.',
-      d3Title: 'Interior Spatial Design',
-      d3Desc: 'Acoustically tuned, minimalist interior spaces with exposed timber and raw stone.',
-    },
-    philosophy: {
-      eyebrow: 'Philosophy',
-      title: 'Designing space through subtraction.',
-      desc: 'Architecture should not demand attention through artificial ornament. We focus on clean geometry, precise lighting angles, durable materials, and natural ergonomics that stand the test of time.',
-      p1Title: '[01] Material Honesty',
-      p1Desc: 'Exposed concrete, glass, steel, and natural timber left untreated to age gracefully.',
-      p2Title: '[02] Volumetric Balance',
-      p2Desc: 'Calculating high ceilings and open sightlines to maximize psychological spatial freedom.',
-      p3Title: '[03] Solar Ergonomics',
-      p3Desc: 'Aligning floorplans to direct natural daylight across key living zones throughout the day.',
-    },
-    services: {
-      eyebrow: 'Services',
-      title: 'Architectural Disciplines',
-      subtitle: 'Full-cycle architectural engineering & design oversight',
-      items: [
-        { num: '01', title: 'Residential Architecture', desc: 'Custom private residences, modern villas, and spatial living concepts tailored to terrain and light.' },
-        { num: '02', title: 'Commercial Design', desc: 'High-performance office hubs, retail spaces, and corporate towers designed for efficiency and prestige.' },
-        { num: '03', title: 'Interior Spatial Planning', desc: 'Minimalist interior architecture emphasizing material honesty, custom joinery, and natural acoustics.' },
-        { num: '04', title: 'планировочное решение', desc: 'Comprehensive space planning strategies, optimized room flows, and architectural layout solutions.' },
-        { num: '05', title: 'Architectural Renovation', desc: 'Sensitive restoration and modernized structural interventions for heritage and existing builds.' },
-        { num: '06', title: 'Landscape Integration', desc: 'Harmonious blending of built concrete and steel with natural topographies and outdoor courtyards.' },
-      ],
-    },
-    process: {
-      eyebrow: 'Process',
-      title: 'From Plot to Structure',
-      items: [
-        { phase: '01', title: 'Discovery & Plot Analysis', desc: 'Site evaluation, zoning verification, solar orientation assessment, and client ambition mapping.' },
-        { phase: '02', title: 'Concept Formulation', desc: 'Initial massing studies, structural wireframes, volumetric proportions, and material sampling.' },
-        { phase: '03', title: 'Schematic Design', desc: 'Detailed 3D visualizations, precise floorplan layouts, and preliminary engineering specs.' },
-        { phase: '04', title: 'Technical Blueprinting', desc: 'Complete construction documentation, structural calculations, and permit compliance drawings.' },
-        { phase: '05', title: 'Execution Oversight', desc: 'On-site supervision, craftsman guidance, and rigorous quality check during construction.' },
-        { phase: '06', title: 'Handover & Commissioning', desc: 'Final architectural validation, acoustic testing, and spatial commissioning for immediate occupancy.' },
-      ],
-    },
-    works: {
-      eyebrow: 'Works',
-      title: 'Selected Projects',
-      filters: { all: 'All', residential: 'Residential', commercial: 'Commercial', public: 'Public' },
-      viewSpecs: 'View Specifications',
-      projects: [
-        { id: 1, num: 'P-01', title: 'Minimalist Concrete Villa', category: 'Residential', location: 'Tashkent, UZ', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80', description: 'Raw concrete geometry paired with warm timber acoustic panels.' },
-        { id: 2, num: 'P-02', title: 'Central Business Plaza', category: 'Commercial', location: 'Tashkent, UZ', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80', description: 'High-performance commercial glass facade integrating passive cooling systems.' },
-        { id: 3, num: 'P-03', title: 'Glass & Steel Pavilion', category: 'Residential', location: 'Mountain Suburbs', image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80', description: 'Suspended glass enclosure offering 360-degree panoramic landscape integration.' },
-        { id: 4, num: 'P-04', title: 'Modern Cultural Center', category: 'Public', location: 'Urban District', image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80', description: 'Fluid public geometry constructed for exhibitions and architectural gatherings.' },
-      ]
-    },
-    quote: {
-      eyebrow: 'Aesthetic Principle',
-      text: '"Architecture is the learned game, correct and magnificent, of forms assembled in the light."',
-      author: 'samandar_arxitector',
-    },
-    contact: {
-      eyebrow: 'Contact',
-      title: 'Initiate a Spatial Project.',
-      desc: 'Available for residential villa consultations, commercial architectural planning, and site development in Tashkent and internationally.',
-      location: 'Tashkent, Uzbekistan',
-    },
-    footer: {
-      rights: 'All rights reserved.',
-    }
-  },
   ru: {
     nav: {
       philosophy: 'Философия',
@@ -245,9 +146,9 @@ const content = {
       btnProjects: 'Смотреть Проекты →',
     },
     metrics: {
-      yearsNum: '06+',
+      yearsNum: '6',
       yearsLabel: 'Лет практики',
-      projectsNum: '35+',
+      projectsNum: '100+',
       projectsLabel: 'Реализованных проектов',
       accuracyNum: '100%',
       accuracyLabel: 'Точность расчетов',
@@ -325,6 +226,105 @@ const content = {
     footer: {
       rights: 'Все права защищены.',
     }
+  },
+  en: {
+    nav: {
+      philosophy: 'Philosophy',
+      services: 'Services',
+      process: 'Process',
+      works: 'Works',
+      contact: 'Contact',
+    },
+    hero: {
+      eyebrow: 'Architectural Practice — Est. 2020',
+      h1_1: 'Space is',
+      h1_2: 'thought',
+      h1_3: 'made real.',
+      desc: 'We design buildings and interiors that respect the particular — the site, the client, the material, the light. Architecture as a practice of close attention.',
+      btnServices: 'Our Services',
+      btnProjects: 'View Projects →',
+    },
+    metrics: {
+      yearsNum: '6',
+      yearsLabel: 'Years in Practice',
+      projectsNum: '100+',
+      projectsLabel: 'Projects Delivered',
+      accuracyNum: '100%',
+      accuracyLabel: 'Structural Accuracy',
+      hqNum: 'Tashkent',
+      hqLabel: 'Base Headquarters',
+    },
+    disciplines: {
+      eyebrow: 'Selected Disciplines',
+      d1Title: 'Residential Architecture',
+      d1Desc: 'Private villas and residences engineered for natural daylight and structural longevity.',
+      d2Title: 'планировочное решение',
+      d2Desc: 'High-density spatial layouts designed with passive climate control and modern materials.',
+      d3Title: 'Interior Spatial Design',
+      d3Desc: 'Acoustically tuned, minimalist interior spaces with exposed timber and raw stone.',
+    },
+    philosophy: {
+      eyebrow: 'Philosophy',
+      title: 'Designing space through subtraction.',
+      desc: 'Architecture should not demand attention through artificial ornament. We focus on clean geometry, precise lighting angles, durable materials, and natural ergonomics that stand the test of time.',
+      p1Title: '[01] Material Honesty',
+      p1Desc: 'Exposed concrete, glass, steel, and natural timber left untreated to age gracefully.',
+      p2Title: '[02] Volumetric Balance',
+      p2Desc: 'Calculating high ceilings and open sightlines to maximize psychological spatial freedom.',
+      p3Title: '[03] Solar Ergonomics',
+      p3Desc: 'Aligning floorplans to direct natural daylight across key living zones throughout the day.',
+    },
+    services: {
+      eyebrow: 'Services',
+      title: 'Architectural Disciplines',
+      subtitle: 'Full-cycle architectural engineering & design oversight',
+      items: [
+        { num: '01', title: 'Residential Architecture', desc: 'Custom private residences, modern villas, and spatial living concepts tailored to terrain and light.' },
+        { num: '02', title: 'Commercial Design', desc: 'High-performance office hubs, retail spaces, and corporate towers designed for efficiency and prestige.' },
+        { num: '03', title: 'Interior Spatial Planning', desc: 'Minimalist interior architecture emphasizing material honesty, custom joinery, and natural acoustics.' },
+        { num: '04', title: 'планировочное решение', desc: 'Comprehensive space planning strategies, optimized room flows, and architectural layout solutions.' },
+        { num: '05', title: 'Architectural Renovation', desc: 'Sensitive restoration and modernized structural interventions for heritage and existing builds.' },
+        { num: '06', title: 'Landscape Integration', desc: 'Harmonious blending of built concrete and steel with natural topographies and outdoor courtyards.' },
+      ],
+    },
+    process: {
+      eyebrow: 'Process',
+      title: 'From Plot to Structure',
+      items: [
+        { phase: '01', title: 'Discovery & Plot Analysis', desc: 'Site evaluation, zoning verification, solar orientation assessment, and client ambition mapping.' },
+        { phase: '02', title: 'Concept Formulation', desc: 'Initial massing studies, structural wireframes, volumetric proportions, and material sampling.' },
+        { phase: '03', title: 'Schematic Design', desc: 'Detailed 3D visualizations, precise floorplan layouts, and preliminary engineering specs.' },
+        { phase: '04', title: 'Technical Blueprinting', desc: 'Complete construction documentation, structural calculations, and permit compliance drawings.' },
+        { phase: '05', title: 'Execution Oversight', desc: 'On-site supervision, craftsman guidance, and rigorous quality check during construction.' },
+        { phase: '06', title: 'Handover & Commissioning', desc: 'Final architectural validation, acoustic testing, and spatial commissioning for immediate occupancy.' },
+      ],
+    },
+    works: {
+      eyebrow: 'Works',
+      title: 'Selected Projects',
+      filters: { all: 'All', residential: 'Residential', commercial: 'Commercial', public: 'Public' },
+      viewSpecs: 'View Specifications',
+      projects: [
+        { id: 1, num: 'P-01', title: 'Minimalist Concrete Villa', category: 'Residential', location: 'Tashkent, UZ', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80', description: 'Raw concrete geometry paired with warm timber acoustic panels.' },
+        { id: 2, num: 'P-02', title: 'Central Business Plaza', category: 'Commercial', location: 'Tashkent, UZ', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80', description: 'High-performance commercial glass facade integrating passive cooling systems.' },
+        { id: 3, num: 'P-03', title: 'Glass & Steel Pavilion', category: 'Residential', location: 'Mountain Suburbs', image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80', description: 'Suspended glass enclosure offering 360-degree panoramic landscape integration.' },
+        { id: 4, num: 'P-04', title: 'Modern Cultural Center', category: 'Public', location: 'Urban District', image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80', description: 'Fluid public geometry constructed for exhibitions and architectural gatherings.' },
+      ]
+    },
+    quote: {
+      eyebrow: 'Aesthetic Principle',
+      text: '"Architecture is the learned game, correct and magnificent, of forms assembled in the light."',
+      author: 'samandar_arxitector',
+    },
+    contact: {
+      eyebrow: 'Contact',
+      title: 'Initiate a Spatial Project.',
+      desc: 'Available for residential villa consultations, commercial architectural planning, and site development in Tashkent and internationally.',
+      location: 'Tashkent, Uzbekistan',
+    },
+    footer: {
+      rights: 'All rights reserved.',
+    }
   }
 };
 
@@ -390,12 +390,12 @@ export default function App() {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            {/* Language Switcher */}
+            {/* Language Switcher (UZ -> RU -> EN) */}
             <div className={`flex items-center gap-1 font-mono-code text-xs border px-2 py-1 ${
               darkMode ? 'border-[#F4EFE6]/20' : 'border-[#1A1917]/20'
             }`}>
               <Globe size={13} className={darkMode ? 'text-[#A09A90]' : 'text-[#666158]'} />
-              {['uz', 'en', 'ru'].map((l) => (
+              {['uz', 'ru', 'en'].map((l) => (
                 <button
                   key={l}
                   onClick={() => setLang(l)}
@@ -460,7 +460,7 @@ export default function App() {
             
             <div className="pt-4 flex items-center justify-between border-t border-[#1A1917]/15">
               <div className="flex items-center gap-2">
-                {['uz', 'en', 'ru'].map((l) => (
+                {['uz', 'ru', 'en'].map((l) => (
                   <button
                     key={l}
                     onClick={() => setLang(l)}
@@ -804,7 +804,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* Clean Contact Section (Form completely removed) */}
+      {/* Clean Contact Section */}
       <section id="contact" className="py-24 px-6 max-w-7xl mx-auto">
         <div className="max-w-3xl space-y-8">
           <div className={`font-mono-code text-xs uppercase tracking-widest ${
