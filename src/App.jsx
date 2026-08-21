@@ -2,21 +2,21 @@ import React, { useState } from 'react';
 import { ArrowUpRight, Menu, X, MapPin, Phone, Send, Sun, Moon, Globe } from 'lucide-react';
 
 const Instagram = ({ size = 16, className = "" }) => (
-  <svg 
-    xmlns="http://www.w3.org/2000/svg" 
-    width={size} 
-    height={size} 
-    viewBox="0 0 24 24" 
-    fill="none" 
-    stroke="currentColor" 
-    strokeWidth="2" 
-    strokeLinecap="round" 
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
     strokeLinejoin="round"
     className={className}
   >
-    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
   </svg>
 );
 
@@ -79,14 +79,14 @@ const content = {
     services: {
       eyebrow: 'Xizmatlar',
       title: 'Arxitektura yo‘nalishlari',
-      subtitle: 'To‘liq tsiklli arxitektura muhandisligi va dizayn nazorati',
+      subtitle: 'Loyihalashtirish va mualliflik nazoratining to‘liq sikli',
       items: [
-        { num: '01', title: 'Turar-joy arxitekturasi', desc: 'Shaxsiy villalar, zamonaviy hovlilar va yer relyefiga moslashtirilgan loyihalar.' },
-        { num: '02', title: 'Tijorat dizayni', desc: 'Yuqori samaradorlikka ega ofislar, savdo markazlari va biznes binolari.' },
-        { num: '03', title: 'Interyer rejalashtirish', desc: 'Materiallar sofligi va tabiiy akustikaga asoslangan minimalist interyerlar.' },
-        { num: '04', title: 'планировочное решение', desc: 'Yirik hududlar master-rejasi, xonalarning o‘ylangan joylashuvi va mukammal rejalashtirish yechimlari.' },
-        { num: '05', title: 'Arxitektura rekonstruksiyasi', desc: 'Tarixiy va mavjud binolarni zamonaviy muhandislik bilan qayta tiklash.' },
-        { num: '06', title: 'Landshaft integratsiyasi', desc: 'Beton va po‘lat konstruksiyalarni tabiiy landshaft bilan uyg‘unlashtirish.' },
+        { num: '01', title: 'Turar-joy arxitekturasi', desc: 'Tabiiy yorug‘lik va muloqot joylashuviga moslashtirilgan shaxsiy villalar hamda rezidensiyalar.' },
+        { num: '02', title: 'Tijorat arxitekturasi', desc: 'Passiv iqlim nazorati va zamonaviy materiallar bilan loyihalashtirilgan biznes markazlari va savdo maydonlari.' },
+        { num: '03', title: 'Interyer va fazoviy dizayn', desc: 'Materiallar sofligi, akustika va yorug‘lik aksentiga ega minimalist interyerlar.' },
+        { num: '04', title: 'Rejalashtirish yechimlari', desc: 'Maydonni unumli tashkil etish, funksional zonalarga ajratish va loyihalash.' },
+        { num: '05', title: 'Qayta tiklash va rekonstruksiya', desc: 'Mavjud bino va inshootlarni ehtiyotkorlik bilan tiklash hamda modernizatsiya qilish.' },
+        { num: '06', title: 'Landshaft integratsiyasi', desc: 'Beton va po‘lat unsurlarining tabiiy landshaft bilan uyg‘unlashgan ko‘rinishi.' },
       ],
     },
     process: {
@@ -181,9 +181,9 @@ const content = {
       subtitle: 'Полный цикл архитектурного проектирования и контроля',
       items: [
         { num: '01', title: 'Жилая архитектура', desc: 'Частные виллы и резиденции, спроектированные с учетом ландшафта и естественного света.' },
-        { num: '02', title: 'Коммерческий дизайн', desc: 'Высокотехнологичные офисные центры, торговые пространства и корпоративные здания.' },
-        { num: '03', title: 'Интерьерное планирование', desc: 'Минималистичная интерьерная архитектура с акцентом на честность материалов и акустику.' },
-        { num: '04', title: 'планировочное решение', desc: 'Продуманная организация пространства, разработка планировочных решений и зонирование.' },
+        { num: '02', title: 'Коммерческая архитектура', desc: 'Высокотехнологичные офисные центры, торговые пространства и корпоративные здания.' },
+        { num: '03', title: 'Интерьерный и пространственный дизайн', desc: 'Минималистичная интерьерная архитектура с акцентом на честность материалов и акустику.' },
+        { num: '04', title: 'Планировочные решения', desc: 'Продуманная организация пространства, разработка планировочных решений и зонирование.' },
         { num: '05', title: 'Реконструкция и реставрация', desc: 'Бережное восстановление и модернизация существующих строений.' },
         { num: '06', title: 'Ландшафтная интеграция', desc: 'Гармоничное сочетание бетона и стали с натуральным ландшафтом.' },
       ],
@@ -277,14 +277,14 @@ const content = {
     services: {
       eyebrow: 'Services',
       title: 'Architectural Disciplines',
-      subtitle: 'Full-cycle architectural engineering & design oversight',
+      subtitle: 'Full cycle of architectural design and oversight',
       items: [
-        { num: '01', title: 'Residential Architecture', desc: 'Custom private residences, modern villas, and spatial living concepts tailored to terrain and light.' },
-        { num: '02', title: 'Commercial Design', desc: 'High-performance office hubs, retail spaces, and corporate towers designed for efficiency and prestige.' },
-        { num: '03', title: 'Interior Spatial Planning', desc: 'Minimalist interior architecture emphasizing material honesty, custom joinery, and natural acoustics.' },
-        { num: '04', title: 'планировочное решение', desc: 'Comprehensive space planning strategies, optimized room flows, and architectural layout solutions.' },
-        { num: '05', title: 'Architectural Renovation', desc: 'Sensitive restoration and modernized structural interventions for heritage and existing builds.' },
-        { num: '06', title: 'Landscape Integration', desc: 'Harmonious blending of built concrete and steel with natural topographies and outdoor courtyards.' },
+        { num: '01', title: 'Residential Architecture', desc: 'Private villas and residences designed with landscape and natural light in mind.' },
+        { num: '02', title: 'Commercial Architecture', desc: 'High-tech office centers, retail spaces, and corporate buildings with passive climate control.' },
+        { num: '03', title: 'Interior & Spatial Design', desc: 'Minimalist interior architecture focusing on material honesty, lighting, and acoustics.' },
+        { num: '04', title: 'Space Planning', desc: 'Thoughtful spatial layout, floor plan optimization, and functional zoning.' },
+        { num: '05', title: 'Reconstruction & Restoration', desc: 'Careful restoration, structural strengthening, and modernization of existing buildings.' },
+        { num: '06', title: 'Landscape Integration', desc: 'Harmonious integration of concrete, glass, and steel with natural topographies.' },
       ],
     },
     process: {
@@ -348,15 +348,14 @@ export default function App() {
     [t.works.filters.public]: 'Public'
   };
 
-  const filteredProjects = activeFilter === 'All' 
-    ? t.works.projects 
+  const filteredProjects = activeFilter === 'All'
+    ? t.works.projects
     : t.works.projects.filter(p => p.category === filterCategoryMap[activeFilter] || p.category === activeFilter);
 
   return (
-    <div className={`min-h-screen font-body transition-colors duration-300 selection:bg-[#7A6348] selection:text-white ${
-      darkMode ? 'bg-[#121110] text-[#F4EFE6]' : 'bg-[#F4EFE6] text-[#1A1917]'
-    }`}>
-      
+    <div className={`min-h-screen font-body transition-colors duration-300 selection:bg-[#7A6348] selection:text-white ${darkMode ? 'bg-[#121110] text-[#F4EFE6]' : 'bg-[#F4EFE6] text-[#1A1917]'
+      }`}>
+
       {/* Inject Google Fonts */}
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500&display=swap');
@@ -368,20 +367,18 @@ export default function App() {
       `}</style>
 
       {/* Navigation */}
-      <header className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b transition-colors duration-300 ${
-        darkMode 
-          ? 'bg-[#121110]/90 border-[#F4EFE6]/15' 
-          : 'bg-[#F4EFE6]/90 border-[#1A1917]/15'
-      }`}>
+      <header className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b transition-colors duration-300 ${darkMode
+        ? 'bg-[#121110]/90 border-[#F4EFE6]/15'
+        : 'bg-[#F4EFE6]/90 border-[#1A1917]/15'
+        }`}>
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <a href="#" className="font-display font-medium text-lg tracking-tight uppercase flex items-center gap-2">
             <span className="w-2 h-2 bg-[#7A6348]"></span>
             samandar_arxitector
           </a>
 
-          <nav className={`hidden lg:flex items-center space-x-8 text-xs uppercase tracking-widest font-mono-code ${
-            darkMode ? 'text-[#A09A90]' : 'text-[#666158]'
-          }`}>
+          <nav className={`hidden lg:flex items-center space-x-8 text-xs uppercase tracking-widest font-mono-code ${darkMode ? 'text-[#A09A90]' : 'text-[#666158]'
+            }`}>
             <a href="#philosophy" className={`transition-colors ${darkMode ? 'hover:text-[#F4EFE6]' : 'hover:text-[#1A1917]'}`}>{t.nav.philosophy}</a>
             <a href="#services" className={`transition-colors ${darkMode ? 'hover:text-[#F4EFE6]' : 'hover:text-[#1A1917]'}`}>{t.nav.services}</a>
             <a href="#process" className={`transition-colors ${darkMode ? 'hover:text-[#F4EFE6]' : 'hover:text-[#1A1917]'}`}>{t.nav.process}</a>
@@ -391,19 +388,17 @@ export default function App() {
 
           <div className="hidden md:flex items-center gap-4">
             {/* Language Switcher (UZ -> RU -> EN) */}
-            <div className={`flex items-center gap-1 font-mono-code text-xs border px-2 py-1 ${
-              darkMode ? 'border-[#F4EFE6]/20' : 'border-[#1A1917]/20'
-            }`}>
+            <div className={`flex items-center gap-1 font-mono-code text-xs border px-2 py-1 ${darkMode ? 'border-[#F4EFE6]/20' : 'border-[#1A1917]/20'
+              }`}>
               <Globe size={13} className={darkMode ? 'text-[#A09A90]' : 'text-[#666158]'} />
               {['uz', 'ru', 'en'].map((l) => (
                 <button
                   key={l}
                   onClick={() => setLang(l)}
-                  className={`px-1.5 py-0.5 uppercase tracking-wider transition-colors ${
-                    lang === l 
-                      ? darkMode ? 'bg-[#F4EFE6] text-[#121110] font-bold' : 'bg-[#1A1917] text-[#F4EFE6] font-bold' 
-                      : darkMode ? 'text-[#A09A90] hover:text-[#F4EFE6]' : 'text-[#666158] hover:text-[#1A1917]'
-                  }`}
+                  className={`px-1.5 py-0.5 uppercase tracking-wider transition-colors ${lang === l
+                    ? darkMode ? 'bg-[#F4EFE6] text-[#121110] font-bold' : 'bg-[#1A1917] text-[#F4EFE6] font-bold'
+                    : darkMode ? 'text-[#A09A90] hover:text-[#F4EFE6]' : 'text-[#666158] hover:text-[#1A1917]'
+                    }`}
                 >
                   {l}
                 </button>
@@ -413,34 +408,32 @@ export default function App() {
             {/* Dark/Light Mode Toggle */}
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className={`p-2 border transition-colors ${
-                darkMode 
-                  ? 'border-[#F4EFE6]/20 text-[#F4EFE6] hover:bg-[#F4EFE6]/10' 
-                  : 'border-[#1A1917]/20 text-[#1A1917] hover:bg-[#1A1917]/10'
-              }`}
+              className={`p-2 border transition-colors ${darkMode
+                ? 'border-[#F4EFE6]/20 text-[#F4EFE6] hover:bg-[#F4EFE6]/10'
+                : 'border-[#1A1917]/20 text-[#1A1917] hover:bg-[#1A1917]/10'
+                }`}
               title="Toggle Theme"
             >
               {darkMode ? <Sun size={15} /> : <Moon size={15} />}
             </button>
 
             {/* Instagram Link */}
-            <a 
-              href="https://instagram.com/samandar_arxitector" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className={`inline-flex items-center gap-2 text-xs font-mono-code uppercase tracking-widest border px-4 py-2 transition-all ${
-                darkMode 
-                  ? 'border-[#F4EFE6]/20 hover:bg-[#F4EFE6] hover:text-[#121110]' 
-                  : 'border-[#1A1917]/20 hover:bg-[#1A1917] hover:text-[#F4EFE6]'
-              }`}
+            <a
+              href="https://instagram.com/samandar_arxitector"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center gap-2 text-xs font-mono-code uppercase tracking-widest border px-4 py-2 transition-all ${darkMode
+                ? 'border-[#F4EFE6]/20 hover:bg-[#F4EFE6] hover:text-[#121110]'
+                : 'border-[#1A1917]/20 hover:bg-[#1A1917] hover:text-[#F4EFE6]'
+                }`}
             >
               <Instagram size={14} />
               <span>@samandar_arxitector</span>
             </a>
           </div>
 
-          <button 
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className={`lg:hidden p-2 ${darkMode ? 'text-[#F4EFE6]' : 'text-[#1A1917]'}`}
           >
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -449,26 +442,24 @@ export default function App() {
 
         {/* Mobile Dropdown */}
         {mobileMenuOpen && (
-          <div className={`lg:hidden border-b px-6 py-8 space-y-4 font-mono-code text-xs uppercase tracking-widest ${
-            darkMode ? 'bg-[#121110] border-[#F4EFE6]/20' : 'bg-[#F4EFE6] border-[#1A1917]/20'
-          }`}>
+          <div className={`lg:hidden border-b px-6 py-8 space-y-4 font-mono-code text-xs uppercase tracking-widest ${darkMode ? 'bg-[#121110] border-[#F4EFE6]/20' : 'bg-[#F4EFE6] border-[#1A1917]/20'
+            }`}>
             <a href="#philosophy" onClick={() => setMobileMenuOpen(false)} className="block py-2">{t.nav.philosophy}</a>
             <a href="#services" onClick={() => setMobileMenuOpen(false)} className="block py-2">{t.nav.services}</a>
             <a href="#process" onClick={() => setMobileMenuOpen(false)} className="block py-2">{t.nav.process}</a>
             <a href="#works" onClick={() => setMobileMenuOpen(false)} className="block py-2">{t.nav.works}</a>
             <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="block py-2">{t.nav.contact}</a>
-            
+
             <div className="pt-4 flex items-center justify-between border-t border-[#1A1917]/15">
               <div className="flex items-center gap-2">
                 {['uz', 'ru', 'en'].map((l) => (
                   <button
                     key={l}
                     onClick={() => setLang(l)}
-                    className={`px-2 py-1 uppercase border ${
-                      lang === l 
-                        ? darkMode ? 'bg-[#F4EFE6] text-[#121110]' : 'bg-[#1A1917] text-[#F4EFE6]' 
-                        : 'border-transparent'
-                    }`}
+                    className={`px-2 py-1 uppercase border ${lang === l
+                      ? darkMode ? 'bg-[#F4EFE6] text-[#121110]' : 'bg-[#1A1917] text-[#F4EFE6]'
+                      : 'border-transparent'
+                      }`}
                   >
                     {l}
                   </button>
@@ -483,13 +474,12 @@ export default function App() {
               </button>
             </div>
 
-            <a 
-              href="https://instagram.com/samandar_arxitector" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className={`inline-flex items-center gap-2 border px-4 py-2 mt-4 ${
-                darkMode ? 'border-[#F4EFE6]' : 'border-[#1A1917]'
-              }`}
+            <a
+              href="https://instagram.com/samandar_arxitector"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`inline-flex items-center gap-2 border px-4 py-2 mt-4 ${darkMode ? 'border-[#F4EFE6]' : 'border-[#1A1917]'
+                }`}
             >
               <Instagram size={14} />
               <span>@samandar_arxitector</span>
@@ -502,9 +492,8 @@ export default function App() {
       <section className="min-h-[calc(100vh-80px)] pt-28 pb-16 px-6 sm:px-12 lg:px-24 max-w-7xl mx-auto flex items-center">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
           <div className="lg:col-span-7">
-            <div className={`font-mono-code text-[11px] tracking-[0.2em] uppercase mb-6 ${
-              darkMode ? 'text-[#C4A482]' : 'text-[#8C7B6B]'
-            }`}>
+            <div className={`font-mono-code text-[11px] tracking-[0.2em] uppercase mb-6 ${darkMode ? 'text-[#C4A482]' : 'text-[#8C7B6B]'
+              }`}>
               {t.hero.eyebrow}
             </div>
 
@@ -514,30 +503,27 @@ export default function App() {
               {t.hero.h1_3}
             </h1>
 
-            <p className={`font-sans-body text-base md:text-lg font-light max-w-xl leading-relaxed mb-10 ${
-              darkMode ? 'text-[#A09A90]' : 'text-[#55514B]'
-            }`}>
+            <p className={`font-sans-body text-base md:text-lg font-light max-w-xl leading-relaxed mb-10 ${darkMode ? 'text-[#A09A90]' : 'text-[#55514B]'
+              }`}>
               {t.hero.desc}
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
-              <a 
-                href="#services" 
-                className={`border px-8 py-4 font-mono-code text-[11px] tracking-[0.2em] uppercase transition-all ${
-                  darkMode 
-                    ? 'border-[#F4EFE6] hover:bg-[#F4EFE6] hover:text-[#121110]' 
-                    : 'border-[#1A1917] hover:bg-[#1A1917] hover:text-[#F4EFE6]'
-                }`}
+              <a
+                href="#services"
+                className={`border px-8 py-4 font-mono-code text-[11px] tracking-[0.2em] uppercase transition-all ${darkMode
+                  ? 'border-[#F4EFE6] hover:bg-[#F4EFE6] hover:text-[#121110]'
+                  : 'border-[#1A1917] hover:bg-[#1A1917] hover:text-[#F4EFE6]'
+                  }`}
               >
                 {t.hero.btnServices}
               </a>
-              <a 
-                href="#works" 
-                className={`border px-8 py-4 font-mono-code text-[11px] tracking-[0.2em] uppercase transition-all ${
-                  darkMode 
-                    ? 'border-[#F4EFE6] hover:bg-[#F4EFE6] hover:text-[#121110]' 
-                    : 'border-[#1A1917] hover:bg-[#1A1917] hover:text-[#F4EFE6]'
-                }`}
+              <a
+                href="#works"
+                className={`border px-8 py-4 font-mono-code text-[11px] tracking-[0.2em] uppercase transition-all ${darkMode
+                  ? 'border-[#F4EFE6] hover:bg-[#F4EFE6] hover:text-[#121110]'
+                  : 'border-[#1A1917] hover:bg-[#1A1917] hover:text-[#F4EFE6]'
+                  }`}
               >
                 {t.hero.btnProjects}
               </a>
@@ -546,9 +532,8 @@ export default function App() {
 
           {/* Sequential Hero Video Player */}
           <div className="lg:col-span-5 relative">
-            <div className={`aspect-[4/5] sm:aspect-[3/4] overflow-hidden border relative ${
-              darkMode ? 'border-[#F4EFE6]/20 bg-[#181614]' : 'border-[#1A1917]/20 bg-[#EFE8DC]'
-            }`}>
+            <div className={`aspect-[4/5] sm:aspect-[3/4] overflow-hidden border relative ${darkMode ? 'border-[#F4EFE6]/20 bg-[#181614]' : 'border-[#1A1917]/20 bg-[#EFE8DC]'
+              }`}>
               <video
                 key={currentVideoIndex}
                 src={heroVideos[currentVideoIndex]}
@@ -558,18 +543,17 @@ export default function App() {
                 onEnded={handleVideoEnd}
                 className="w-full h-full object-cover filter grayscale contrast-125 hover:grayscale-0 transition-all duration-700"
               />
-              
+
               {/* Video Slide Indicators */}
               <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center bg-black/40 backdrop-blur-sm px-3 py-1.5 font-mono-code text-[10px] text-white">
                 <span className="uppercase tracking-widest">Video 0{currentVideoIndex + 1} / 0{heroVideos.length}</span>
                 <div className="flex gap-1.5">
                   {heroVideos.map((_, idx) => (
-                    <span 
-                      key={idx} 
+                    <span
+                      key={idx}
                       onClick={() => setCurrentVideoIndex(idx)}
-                      className={`h-1 cursor-pointer transition-all ${
-                        currentVideoIndex === idx ? 'w-4 bg-white' : 'w-1.5 bg-white/40'
-                      }`}
+                      className={`h-1 cursor-pointer transition-all ${currentVideoIndex === idx ? 'w-4 bg-white' : 'w-1.5 bg-white/40'
+                        }`}
                     />
                   ))}
                 </div>
@@ -580,12 +564,10 @@ export default function App() {
       </section>
 
       {/* Disciplines Section */}
-      <section id="services" className={`py-24 px-8 sm:px-12 lg:px-24 border-t max-w-7xl mx-auto ${
-        darkMode ? 'border-[#F4EFE6]/15' : 'border-[#1A1917]/15'
-      }`}>
-        <div className={`font-mono-code text-[11px] tracking-[0.2em] uppercase mb-8 ${
-          darkMode ? 'text-[#C4A482]' : 'text-[#8C7B6B]'
+      <section id="services" className={`py-24 px-8 sm:px-12 lg:px-24 border-t max-w-7xl mx-auto ${darkMode ? 'border-[#F4EFE6]/15' : 'border-[#1A1917]/15'
         }`}>
+        <div className={`font-mono-code text-[11px] tracking-[0.2em] uppercase mb-8 ${darkMode ? 'text-[#C4A482]' : 'text-[#8C7B6B]'
+          }`}>
           {t.disciplines.eyebrow}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 font-sans-body">
@@ -605,9 +587,8 @@ export default function App() {
       </section>
 
       {/* Metrics Strip */}
-      <section className={`border-b border-t ${
-        darkMode ? 'bg-[#181614] border-[#F4EFE6]/15' : 'bg-[#EFE8DC] border-[#1A1917]/15'
-      }`}>
+      <section className={`border-b border-t ${darkMode ? 'bg-[#181614] border-[#F4EFE6]/15' : 'bg-[#EFE8DC] border-[#1A1917]/15'
+        }`}>
         <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-4 gap-8 font-mono-code">
           <div className={`border-l pl-6 ${darkMode ? 'border-[#F4EFE6]/15' : 'border-[#1A1917]/15'}`}>
             <div className="text-3xl md:text-4xl font-display font-light mb-1">{t.metrics.yearsNum}</div>
@@ -629,14 +610,12 @@ export default function App() {
       </section>
 
       {/* Philosophy Section */}
-      <section id="philosophy" className={`py-24 px-6 max-w-7xl mx-auto border-b ${
-        darkMode ? 'border-[#F4EFE6]/15' : 'border-[#1A1917]/15'
-      }`}>
+      <section id="philosophy" className={`py-24 px-6 max-w-7xl mx-auto border-b ${darkMode ? 'border-[#F4EFE6]/15' : 'border-[#1A1917]/15'
+        }`}>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-4">
-            <div className={`font-mono-code text-xs uppercase tracking-widest mb-3 ${
-              darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'
-            }`}>{t.philosophy.eyebrow}</div>
+            <div className={`font-mono-code text-xs uppercase tracking-widest mb-3 ${darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'
+              }`}>{t.philosophy.eyebrow}</div>
             <h2 className="font-display text-3xl md:text-4xl font-light leading-tight">
               {t.philosophy.title}
             </h2>
@@ -646,9 +625,8 @@ export default function App() {
               {t.philosophy.desc}
             </p>
 
-            <div className={`grid grid-cols-1 sm:grid-cols-3 gap-8 pt-6 border-t ${
-              darkMode ? 'border-[#F4EFE6]/15' : 'border-[#1A1917]/15'
-            }`}>
+            <div className={`grid grid-cols-1 sm:grid-cols-3 gap-8 pt-6 border-t ${darkMode ? 'border-[#F4EFE6]/15' : 'border-[#1A1917]/15'
+              }`}>
               <div>
                 <div className={`font-mono-code text-xs mb-2 ${darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'}`}>{t.philosophy.p1Title}</div>
                 <p className={`text-sm ${darkMode ? 'text-[#A09A90]' : 'text-[#666158]'}`}>{t.philosophy.p1Desc}</p>
@@ -667,30 +645,26 @@ export default function App() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className={`py-24 px-6 max-w-7xl mx-auto border-b ${
-        darkMode ? 'border-[#F4EFE6]/15' : 'border-[#1A1917]/15'
-      }`}>
+      <section id="services" className={`py-24 px-6 max-w-7xl mx-auto border-b ${darkMode ? 'border-[#F4EFE6]/15' : 'border-[#1A1917]/15'
+        }`}>
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
           <div>
-            <div className={`font-mono-code text-xs uppercase tracking-widest mb-3 ${
-              darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'
-            }`}>{t.services.eyebrow}</div>
+            <div className={`font-mono-code text-xs uppercase tracking-widest mb-3 ${darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'
+              }`}>{t.services.eyebrow}</div>
             <h2 className="font-display text-3xl md:text-4xl font-light">{t.services.title}</h2>
           </div>
           <p className={`text-sm font-mono-code ${darkMode ? 'text-[#A09A90]' : 'text-[#666158]'}`}>{t.services.subtitle}</p>
         </div>
 
-        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border-t border-l ${
-          darkMode ? 'border-[#F4EFE6]/15' : 'border-[#1A1917]/15'
-        }`}>
+        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 border-t border-l ${darkMode ? 'border-[#F4EFE6]/15' : 'border-[#1A1917]/15'
+          }`}>
           {t.services.items.map((s) => (
-            <div 
-              key={s.num} 
-              className={`p-8 border-r border-b transition-colors group ${
-                darkMode 
-                  ? 'border-[#F4EFE6]/15 bg-[#121110] hover:bg-[#1C1A18]' 
-                  : 'border-[#1A1917]/15 bg-[#F4EFE6] hover:bg-[#EFE8DC]'
-              }`}
+            <div
+              key={s.num}
+              className={`p-8 border-r border-b transition-colors group ${darkMode
+                ? 'border-[#F4EFE6]/15 bg-[#121110] hover:bg-[#1C1A18]'
+                : 'border-[#1A1917]/15 bg-[#F4EFE6] hover:bg-[#EFE8DC]'
+                }`}
             >
               <div className={`font-mono-code text-xs mb-6 ${darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'}`}>{s.num}</div>
               <h3 className="font-display text-xl font-normal mb-3">{s.title}</h3>
@@ -701,13 +675,11 @@ export default function App() {
       </section>
 
       {/* Process Section */}
-      <section id="process" className={`py-24 px-6 max-w-7xl mx-auto border-b ${
-        darkMode ? 'border-[#F4EFE6]/15' : 'border-[#1A1917]/15'
-      }`}>
+      <section id="process" className={`py-24 px-6 max-w-7xl mx-auto border-b ${darkMode ? 'border-[#F4EFE6]/15' : 'border-[#1A1917]/15'
+        }`}>
         <div className="max-w-2xl mb-16">
-          <div className={`font-mono-code text-xs uppercase tracking-widest mb-3 ${
-            darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'
-          }`}>{t.process.eyebrow}</div>
+          <div className={`font-mono-code text-xs uppercase tracking-widest mb-3 ${darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'
+            }`}>{t.process.eyebrow}</div>
           <h2 className="font-display text-3xl md:text-4xl font-light">{t.process.title}</h2>
         </div>
 
@@ -723,29 +695,26 @@ export default function App() {
       </section>
 
       {/* Works Section */}
-      <section id="works" className={`py-24 px-6 max-w-7xl mx-auto border-b ${
-        darkMode ? 'border-[#F4EFE6]/15' : 'border-[#1A1917]/15'
-      }`}>
+      <section id="works" className={`py-24 px-6 max-w-7xl mx-auto border-b ${darkMode ? 'border-[#F4EFE6]/15' : 'border-[#1A1917]/15'
+        }`}>
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div>
-            <div className={`font-mono-code text-xs uppercase tracking-widest mb-3 ${
-              darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'
-            }`}>{t.works.eyebrow}</div>
+            <div className={`font-mono-code text-xs uppercase tracking-widest mb-3 ${darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'
+              }`}>{t.works.eyebrow}</div>
             <h2 className="font-display text-3xl md:text-4xl font-light">{t.works.title}</h2>
           </div>
-          
+
           <div className="flex flex-wrap gap-2 font-mono-code text-xs uppercase tracking-wider">
             {[t.works.filters.all, t.works.filters.residential, t.works.filters.commercial, t.works.filters.public].map((cat) => (
               <button
                 key={cat}
                 onClick={() => setActiveFilter(cat)}
-                className={`px-4 py-2 border transition-all ${
-                  activeFilter === cat 
-                    ? darkMode ? 'bg-[#F4EFE6] text-[#121110] border-[#F4EFE6]' : 'bg-[#1A1917] text-[#F4EFE6] border-[#1A1917]' 
-                    : darkMode 
-                      ? 'border-[#F4EFE6]/20 text-[#A09A90] hover:border-[#F4EFE6] hover:text-[#F4EFE6]' 
-                      : 'border-[#1A1917]/20 text-[#666158] hover:border-[#1A1917] hover:text-[#1A1917]'
-                }`}
+                className={`px-4 py-2 border transition-all ${activeFilter === cat
+                  ? darkMode ? 'bg-[#F4EFE6] text-[#121110] border-[#F4EFE6]' : 'bg-[#1A1917] text-[#F4EFE6] border-[#1A1917]'
+                  : darkMode
+                    ? 'border-[#F4EFE6]/20 text-[#A09A90] hover:border-[#F4EFE6] hover:text-[#F4EFE6]'
+                    : 'border-[#1A1917]/20 text-[#666158] hover:border-[#1A1917] hover:text-[#1A1917]'
+                  }`}
               >
                 {cat}
               </button>
@@ -755,33 +724,29 @@ export default function App() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {filteredProjects.map((p) => (
-            <div key={p.id} className={`group border ${
-              darkMode ? 'border-[#F4EFE6]/15 bg-[#181614]' : 'border-[#1A1917]/15 bg-[#EFE8DC]'
-            }`}>
+            <div key={p.id} className={`group border ${darkMode ? 'border-[#F4EFE6]/15 bg-[#181614]' : 'border-[#1A1917]/15 bg-[#EFE8DC]'
+              }`}>
               <div className="aspect-[16/10] overflow-hidden relative">
-                <img 
-                  src={p.image} 
+                <img
+                  src={p.image}
                   alt={p.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
-                <div className={`absolute top-4 left-4 border px-3 py-1 font-mono-code text-[10px] uppercase tracking-widest ${
-                  darkMode ? 'bg-[#121110] border-[#F4EFE6]/20' : 'bg-[#F4EFE6] border-[#1A1917]/20'
-                }`}>
+                <div className={`absolute top-4 left-4 border px-3 py-1 font-mono-code text-[10px] uppercase tracking-widest ${darkMode ? 'bg-[#121110] border-[#F4EFE6]/20' : 'bg-[#F4EFE6] border-[#1A1917]/20'
+                  }`}>
                   {p.num}
                 </div>
               </div>
               <div className="p-8">
-                <div className={`flex items-center justify-between font-mono-code text-xs mb-2 ${
-                  darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'
-                }`}>
+                <div className={`flex items-center justify-between font-mono-code text-xs mb-2 ${darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'
+                  }`}>
                   <span>{p.category}</span>
                   <span>{p.location}</span>
                 </div>
                 <h3 className="font-display text-2xl font-light mb-3">{p.title}</h3>
                 <p className={`text-sm leading-relaxed mb-6 ${darkMode ? 'text-[#A09A90]' : 'text-[#666158]'}`}>{p.description}</p>
-                <div className={`inline-flex items-center gap-2 font-mono-code text-xs uppercase tracking-widest transition-colors ${
-                  darkMode ? 'text-[#F4EFE6] group-hover:text-[#C4A482]' : 'text-[#1A1917] group-hover:text-[#7A6348]'
-                }`}>
+                <div className={`inline-flex items-center gap-2 font-mono-code text-xs uppercase tracking-widest transition-colors ${darkMode ? 'text-[#F4EFE6] group-hover:text-[#C4A482]' : 'text-[#1A1917] group-hover:text-[#7A6348]'
+                  }`}>
                   <span>{t.works.viewSpecs}</span>
                   <ArrowUpRight size={14} />
                 </div>
@@ -792,9 +757,8 @@ export default function App() {
       </section>
 
       {/* Quote Break */}
-      <section className={`py-28 px-6 text-center ${
-        darkMode ? 'bg-[#181614] text-[#F4EFE6]' : 'bg-[#1A1917] text-[#F4EFE6]'
-      }`}>
+      <section className={`py-28 px-6 text-center ${darkMode ? 'bg-[#181614] text-[#F4EFE6]' : 'bg-[#1A1917] text-[#F4EFE6]'
+        }`}>
         <div className="max-w-5xl mx-auto space-y-8">
           <div className="font-mono-code text-xs uppercase tracking-widest text-[#C4A482]">{t.quote.eyebrow}</div>
           <blockquote className="font-display text-3xl md:text-5xl font-light leading-snug tracking-tight">
@@ -807,9 +771,8 @@ export default function App() {
       {/* Clean Contact Section */}
       <section id="contact" className="py-24 px-6 max-w-7xl mx-auto">
         <div className="max-w-3xl space-y-8">
-          <div className={`font-mono-code text-xs uppercase tracking-widest ${
-            darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'
-          }`}>{t.contact.eyebrow}</div>
+          <div className={`font-mono-code text-xs uppercase tracking-widest ${darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'
+            }`}>{t.contact.eyebrow}</div>
           <h2 className="font-display text-4xl md:text-6xl font-light leading-tight">
             {t.contact.title}
           </h2>
@@ -841,9 +804,8 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer className={`border-t py-10 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 font-mono-code text-xs ${
-        darkMode ? 'border-[#F4EFE6]/15 text-[#A09A90]' : 'border-[#1A1917]/15 text-[#666158]'
-      }`}>
+      <footer className={`border-t py-10 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 font-mono-code text-xs ${darkMode ? 'border-[#F4EFE6]/15 text-[#A09A90]' : 'border-[#1A1917]/15 text-[#666158]'
+        }`}>
         <div>© {new Date().getFullYear()} samandar_arxitector. {t.footer.rights}</div>
         <div className="flex items-center gap-6">
           <a href="tel:+998332634242" className={`transition-colors ${darkMode ? 'hover:text-[#F4EFE6]' : 'hover:text-[#1A1917]'}`}>
@@ -852,10 +814,10 @@ export default function App() {
           <a href="https://t.me/uz_702" target="_blank" rel="noopener noreferrer" className={`transition-colors ${darkMode ? 'hover:text-[#F4EFE6]' : 'hover:text-[#1A1917]'}`}>
             Telegram: @uz_702
           </a>
-          <a 
-            href="https://instagram.com/samandar_arxitector" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://instagram.com/samandar_arxitector"
+            target="_blank"
+            rel="noopener noreferrer"
             className={`flex items-center gap-2 transition-colors ${darkMode ? 'hover:text-[#F4EFE6]' : 'hover:text-[#1A1917]'}`}
           >
             <Instagram size={14} />
