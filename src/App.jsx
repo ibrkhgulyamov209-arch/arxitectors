@@ -530,36 +530,51 @@ export default function App() {
             </div>
           </div>
 
-          {/* Sequential Hero Video Player */}
-          <div className="lg:col-span-5 relative">
-            <div className={`aspect-[4/5] sm:aspect-[3/4] overflow-hidden border relative ${darkMode ? 'border-[#F4EFE6]/20 bg-[#181614]' : 'border-[#1A1917]/20 bg-[#EFE8DC]'
-              }`}>
-              <video
-                src="/vid1.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="w-full rounded-xl"
-              >
-              </video>
+{/* Sequential Hero Video Player */}
+      <div className="lg:col-span-5 relative">
+        <div
+          className={`aspect-[4/5] sm:aspect-[3/4] overflow-hidden border relative ${
+            darkMode
+              ? "border-[#F4EFE6]/20 bg-[#181614]"
+              : "border-[#1A1917]/20 bg-[#EFE8DC]"
+          }`}
+        >
+          {/* Current Video */}
+          <video
+            key={heroVideos[currentVideoIndex]}
+            src={heroVideos[currentVideoIndex]}
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+          />
 
-              {/* Video Slide Indicators */}
-              <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center bg-black/40 backdrop-blur-sm px-3 py-1.5 font-mono-code text-[10px] text-white">
-                <span className="uppercase tracking-widest">Video 0{currentVideoIndex + 1} / 0{heroVideos.length}</span>
-                <div className="flex gap-1.5">
-                  {heroVideos.map((_, idx) => (
-                    <span
-                      key={idx}
-                      onClick={() => setCurrentVideoIndex(idx)}
-                      className={`h-1 cursor-pointer transition-all ${currentVideoIndex === idx ? 'w-4 bg-white' : 'w-1.5 bg-white/40'
-                        }`}
-                    />
-                  ))}
-                </div>
-              </div>
+          {/* Video Slide Indicators */}
+          <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center bg-black/40 backdrop-blur-sm px-3 py-1.5 font-mono-code text-[10px] text-white">
+            
+            {/* Video Counter */}
+            <span className="uppercase tracking-widest">
+              Video 0{currentVideoIndex + 1} / 0{heroVideos.length}
+            </span>
+
+            {/* Indicators */}
+            <div className="flex gap-1.5">
+              {heroVideos.map((_, idx) => (
+                <span
+                  key={idx}
+                  onClick={() => setCurrentVideoIndex(idx)}
+                  className={`h-1 cursor-pointer transition-all ${
+                    currentVideoIndex === idx
+                      ? "w-4 bg-white"
+                      : "w-1.5 bg-white/40"
+                  }`}
+                />
+              ))}
             </div>
           </div>
+        </div>
+      </div>
         </div>
       </section>
 
