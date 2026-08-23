@@ -536,13 +536,12 @@ export default function App() {
               }`}>
               <video
                 src="/vid1.mp4"
-                controls
+                autoPlay
                 muted
                 loop
                 playsInline
                 className="w-full rounded-xl"
               >
-                Your browser does not support the video tag.
               </video>
 
               {/* Video Slide Indicators */}
