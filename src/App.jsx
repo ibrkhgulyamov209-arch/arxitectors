@@ -475,7 +475,7 @@ export default function App() {
             </div>
 
             <a
-              href="https://instagram.com/samandar_arxitector"
+              href="https://www.instagram.com/samandar_arxitektor"
               target="_blank"
               rel="noopener noreferrer"
               className={`inline-flex items-center gap-2 border px-4 py-2 mt-4 ${darkMode ? 'border-[#F4EFE6]' : 'border-[#1A1917]'
@@ -535,14 +535,15 @@ export default function App() {
             <div className={`aspect-[4/5] sm:aspect-[3/4] overflow-hidden border relative ${darkMode ? 'border-[#F4EFE6]/20 bg-[#181614]' : 'border-[#1A1917]/20 bg-[#EFE8DC]'
               }`}>
               <video
-                key={currentVideoIndex}
-                src={heroVideos[currentVideoIndex]}
-                autoPlay
+                src="/vid1.mp4"
+                controls
                 muted
+                loop
                 playsInline
-                onEnded={handleVideoEnd}
-                className="w-full h-full object-cover filter grayscale contrast-125 hover:grayscale-0 transition-all duration-700"
-              />
+                className="w-full rounded-xl"
+              >
+                Your browser does not support the video tag.
+              </video>
 
               {/* Video Slide Indicators */}
               <div className="absolute bottom-4 left-4 right-4 flex justify-between items-center bg-black/40 backdrop-blur-sm px-3 py-1.5 font-mono-code text-[10px] text-white">
