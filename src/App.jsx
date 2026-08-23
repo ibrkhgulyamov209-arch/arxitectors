@@ -550,10 +550,12 @@ export default function App() {
                 src={heroVideos[currentVideoIndex]}
                 autoPlay
                 muted
-                loop
                 playsInline
                 controls={false}
                 className="w-full h-full object-cover"
+                onEnded={() => {
+                  setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % heroVideos.length);
+                }}
                 onError={(e) => {
                   console.log("VIDEO ERROR:", e.currentTarget.error);
                   console.log("VIDEO SRC:", e.currentTarget.src);
