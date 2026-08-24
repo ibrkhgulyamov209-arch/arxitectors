@@ -337,6 +337,7 @@ export default function App() {
     "/videos/vid1.mp4",
     "/videos/vid2.mp4",
     "/videos/vid3.mp4",
+    "/videos/vid4.mp4"  
   ];
 
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
@@ -489,7 +490,7 @@ export default function App() {
                 }`}
             >
               <Instagram size={14} />
-              <span>@samandar_arxitector</span>
+              <span>@samandar_arxitektor</span>
             </a>
           </div>
         )}
@@ -818,8 +819,8 @@ export default function App() {
             </div>
             <div className="flex items-center gap-3">
               <Instagram size={18} className={darkMode ? 'text-[#C4A482]' : 'text-[#7A6348]'} />
-              <a href="https://instagram.com/samandar_arxitector" target="_blank" rel="noopener noreferrer" className="hover:underline transition-colors">
-                @samandar_arxitector
+              <a href="https://www.instagram.com/samandar_arxitektor" target="_blank" rel="noopener noreferrer" className="hover:underline transition-colors">
+                @samandar_arxitektor
               </a>
             </div>
           </div>
@@ -829,7 +830,7 @@ export default function App() {
       {/* Footer */}
       <footer className={`border-t py-10 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 font-mono-code text-xs ${darkMode ? 'border-[#F4EFE6]/15 text-[#A09A90]' : 'border-[#1A1917]/15 text-[#666158]'
         }`}>
-        <div>© {new Date().getFullYear()} samandar_arxitector. {t.footer.rights}</div>
+        <div>© {new Date().getFullYear()} samandar_arxitektor. {t.footer.rights}</div>
         <div className="flex items-center gap-6">
           <a href="tel:+998332634242" className={`transition-colors ${darkMode ? 'hover:text-[#F4EFE6]' : 'hover:text-[#1A1917]'}`}>
             +998 33 263 42 42
@@ -838,13 +839,13 @@ export default function App() {
             Telegram: @uz_702
           </a>
           <a
-            href="https://instagram.com/samandar_arxitector"
+            href="https://www.instagram.com/samandar_arxitektor"
             target="_blank"
             rel="noopener noreferrer"
             className={`flex items-center gap-2 transition-colors ${darkMode ? 'hover:text-[#F4EFE6]' : 'hover:text-[#1A1917]'}`}
           >
             <Instagram size={14} />
-            <span>@samandar_arxitector</span>
+            <span>@samandar_arxitektor</span>
           </a>
         </div>
       </footer>
