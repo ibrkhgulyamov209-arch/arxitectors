@@ -436,7 +436,7 @@ export default function App() {
                 }`}
             >
               <Instagram size={14} />
-              <span>@samandar_arxitector</span>
+              <span>@samandar_arxitektor</span>
             </a>
           </div>
 
@@ -541,7 +541,7 @@ export default function App() {
           {/* Sequential Hero Video Player */}
           <div className="lg:col-span-5 relative">
             <div
-              className={`aspect-[4/5] sm:aspect-[3/4] overflow-hidden border relative ${darkMode
+              className={`aspect-4/5 sm:aspect-3/4 overflow-hidden border relative ${darkMode
                   ? "border-[#F4EFE6]/20 bg-[#181614]"
                   : "border-[#1A1917]/20 bg-[#EFE8DC]"
                 }`}
@@ -750,7 +750,7 @@ export default function App() {
           {filteredProjects.map((p) => (
             <div key={p.id} className={`group border ${darkMode ? 'border-[#F4EFE6]/15 bg-[#181614]' : 'border-[#1A1917]/15 bg-[#EFE8DC]'
               }`}>
-              <div className="aspect-[16/10] overflow-hidden relative">
+              <div className="aspect-16/10 overflow-hidden relative">
                 <img
                   src={p.image}
                   alt={p.title}
