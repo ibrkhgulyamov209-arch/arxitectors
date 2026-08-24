@@ -116,7 +116,7 @@ const content = {
     quote: {
       eyebrow: 'Aestetik tamoyil',
       text: '"Arxitektura — bu yorug‘lik ostida to‘plangan shakllarning mukammal va mo‘jizaviy o‘yinidir."',
-      author: 'samandar_arxitector',
+      author: 'samandar_arxitektor',
     },
     contact: {
       eyebrow: 'Aloqa',
@@ -215,7 +215,7 @@ const content = {
     quote: {
       eyebrow: 'Эстетический принцип',
       text: '"Архитектура — это искусно, правильно и величественно сыгранная игра объемов, освещенных солнцем."',
-      author: 'samandar_arxitector',
+      author: 'samandar_arxitektor',
     },
     contact: {
       eyebrow: 'Контакты',
