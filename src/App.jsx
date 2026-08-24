@@ -314,7 +314,7 @@ const content = {
     quote: {
       eyebrow: 'Aesthetic Principle',
       text: '"Architecture is the learned game, correct and magnificent, of forms assembled in the light."',
-      author: 'samandar_arxitector',
+      author: 'samandar_arxitektor',
     },
     contact: {
       eyebrow: 'Contact',
