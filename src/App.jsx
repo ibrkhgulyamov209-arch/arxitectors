@@ -382,7 +382,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <a href="#" className="font-display font-medium text-lg tracking-tight uppercase flex items-center gap-2">
             <span className="w-2 h-2 bg-[#7A6348]"></span>
-            samandar_arxitector
+            samandar_arxitektor
           </a>
 
           <nav className={`hidden lg:flex items-center space-x-8 text-xs uppercase tracking-widest font-mono-code ${darkMode ? 'text-[#A09A90]' : 'text-[#666158]'
